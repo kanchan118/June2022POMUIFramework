@@ -10,7 +10,7 @@ public class F2 {
 	public void login() {
 		
 		String un = "ahmed";
-		String pwd = "12345";
+		String pwd = "ahmd123";
 	}
 
 }
