@@ -10,6 +10,10 @@ public class FeaturePage {
 		System.out.println("feature f2");
 	}
 	
+	public void f3() {
+		System.out.println("feature f3");
+	}
+	
 	
 
 }
