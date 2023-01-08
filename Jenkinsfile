@@ -36,7 +36,7 @@ pipeline
         stage('Regression Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/kanchan118/June2022POMUIFramework'
+                    git 'https://github.com/kanchan118/June2022POMUIFramework.git'
                     sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regression.xml"
                     
                 }
@@ -80,7 +80,7 @@ pipeline
         stage('Sanity Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/kanchan118/June2022POMUIFramework'
+                    git 'https://github.com/kanchan118/June2022POMUIFramework.git'
                     sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml"
                     
                 }
